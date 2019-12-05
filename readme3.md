@@ -11,3 +11,8 @@ number video seen : 14
 add : git branch -b namebranch
 merge : git merge namebranch
 remove after merge : git branch -d namebranch
+
+#for alias
+add command for use with alias name
+ex: git config --global alias.fulllog "log --oneline --graph --decorate --all"
+then in use : git fulllog
