@@ -1,3 +1,5 @@
-hello word
+hello
 
-hi i am change this in stashtest
+I am learning git
+
+in readme3.md, i write command and add note about that
