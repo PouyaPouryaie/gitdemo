@@ -22,3 +22,7 @@ add : git tag name
 list : git tag --list
 delete : git tag -d tagname
 best : git tag -a tagname -m "tag message"
+
+#for reset
+soft mode : git reset --soft id
+hard mode : git reset --hard id
