@@ -76,3 +76,11 @@ number video seen : 14
 # show detail in commit
 
     git show commit id
+
+# branch in remote
+
+    1- first create branch in remote repository
+    2- git fetch in local and see created branch in remote repository : git fetch
+    3- git checkout remote-branch-name : git checkout remote-branch-name
+    4- work on the branch and then commit in local : git commit -am "" (this commit done on the remote-branch-name)
+    5- push branch on the remote repository : git push (this change just remote-branch-name)
