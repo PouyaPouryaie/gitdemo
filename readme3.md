@@ -16,3 +16,9 @@ remove after merge : git branch -d namebranch
 add command for use with alias name
 ex: git config --global alias.fulllog "log --oneline --graph --decorate --all"
 then in use : git fulllog
+
+#for tag
+add : git tag name
+list : git tag --list
+delete : git tag -d tagname
+best : git tag -a tagname -m "tag message"
