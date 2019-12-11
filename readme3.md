@@ -26,6 +26,7 @@ number video seen : 14
     list : git tag --list
     delete : git tag -d tagname
     best : git tag -a tagname -m "tag message"
+    show comment : git tag -n
 
 # reset
 
