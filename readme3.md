@@ -90,5 +90,5 @@ number video seen : 14
 
 # remove branch
 
-    from local : git checkout -d branch-name
+    from local : git branch -d branch-name
     from remote : git push origin :branch-name
