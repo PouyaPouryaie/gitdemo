@@ -1,5 +1,14 @@
 # git command
 
+# add
+    git add fileName ('.' that symbol means all file)
+
+# commit
+
+    1- simple : git commit -m "message"
+    2- add And Commit : git commit -am "message" (recommend for when you just modify file not added)
+    3- commit With IssueDone : git commit -m "message %close #issueNumber" (after that push to remote repo)
+
 # back file to latest station
 
     1- add file to stage
