@@ -69,6 +69,8 @@ number video seen : 14
 
     pull means fetch from repo and merge with local
         git pull
+    for pull specific branch from remote to local
+        git pull origin 'branch-name' (recommend before pull in local create branch with same name in remote) 
 
 # rename remote repo in local
 
