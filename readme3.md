@@ -45,30 +45,33 @@ number video seen : 14
 # push
 
     1- if you are not repo in local:
-        echo "# gitdemo" >> README.md
-        git init
-        git add README.md
-        git commit -m "first commit"
-        git remote add origin git@github.com:PouyaPouryaie/gitdemo.git
-        git push -u origin master
+        * echo "# gitdemo" >> README.md
+        * git init
+        * git add README.md
+        * git commit -m "first commit"
+        * git remote add origin git@github.com:PouyaPouryaie/gitdemo.git
+        * git push -u origin master
 
     2- if you are have repo in local
-        git remote add origin git@github.com:PouyaPouryaie/gitdemo.git
-        git push -u origin master
+        * git remote add origin git@github.com:PouyaPouryaie/gitdemo.git
+        * git push -u origin master
 
-    3- if you are push from local in repo anytime
-        git push origin master
+    3- if you created branch in local and you want push that as new branch in remote repo
+        * git push -u origin branchName
 
-    4- if you want use simple push command 
-        git config --global push.default simple
-        git push
+    4- if you are push from local in repo anytime
+        * git push origin master
 
-    5- if you want send tag to remote repo
-        git push origin tagName
-        git push --tags (send all tags)
+    5- if you want use simple push command 
+        * git config --global push.default simple
+        * git push
+
+    6- if you want send tag to remote repo
+        * git push origin tagName
+        * git push --tags (send all tags)
     
-    6- if you want Edit tag in remote repo
-        git push --force origin tagName
+    7- if you want Edit tag in remote repo
+        * git push --force origin tagName
 
 # clone
 
