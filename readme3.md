@@ -87,3 +87,8 @@ number video seen : 14
     3- git checkout remote-branch-name : git checkout remote-branch-name
     4- work on the branch and then commit in local : git commit -am "" (this commit done on the remote-branch-name)
     5- push branch on the remote repository : git push (this change just remote-branch-name)
+
+# remove branch
+
+    from local : git checkout -d branch-name
+    from remote : git push origin :branch-name
