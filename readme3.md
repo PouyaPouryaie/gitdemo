@@ -23,6 +23,8 @@ number video seen : 14
 # tag
 
     add : git tag name
+    flexibleTag : git tag -a tagName -m "message" commitId
+    show detail : git show tagName
     list : git tag --list
     delete : git tag -d tagname
     best : git tag -a tagname -m "tag message"
