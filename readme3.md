@@ -26,9 +26,9 @@ number video seen : 14
     flexibleTag : git tag -a tagName -m "message" commitId
     show detail : git show tagName
     list : git tag --list
-    delete : git tag -d tagname
     best : git tag -a tagname -m "tag message"
     show comment : git tag -n
+    EditTag : git tag -f tagName commitId
 
 # reset
 
@@ -66,6 +66,9 @@ number video seen : 14
     5- if you want send tag to remote repo
         git push origin tagName
         git push --tags (send all tags)
+    
+    6- if you want Edit tag in remote repo
+        git push --force origin tagName
 
 # clone
 
@@ -94,7 +97,11 @@ number video seen : 14
     4- work on the branch and then commit in local : git commit -am "" (this commit done on the remote-branch-name)
     5- push branch on the remote repository : git push (this change just remote-branch-name)
 
-# remove branch
+# remove
 
-    from local : git branch -d branch-name
-    from remote : git push origin :branch-name
+    branch:
+        from local : git branch -d branchName
+        from remote : git push origin :branchName
+    tag:
+        from remote : git push origin :tagName
+        from local : git tag -d tagname
