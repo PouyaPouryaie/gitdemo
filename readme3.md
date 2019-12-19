@@ -63,6 +63,10 @@ number video seen : 14
         git config --global push.default simple
         git push
 
+    5- if you want send tag to remote repo
+        git push origin tagName
+        git push --tags (send all tags)
+
 # clone
 
     git clone repoAddress
