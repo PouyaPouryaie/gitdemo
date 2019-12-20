@@ -13,3 +13,6 @@ i have change file in statsh test
 ## i add this line in master branch
 
 ## i add new this line in master branch
+* add this line for issues.
+
+## i want change this file in rebase-branch
