@@ -117,3 +117,26 @@ number video seen : 14
     tag:
         from remote : git push origin :tagName
         from local : git tag -d tagname
+
+# rebase
+
+    1- normal:
+        git rebase branchName (all of commit in 'ranchName' rebase onto current branch)
+    2- Interactive:
+        git rebase -i branchName (then in file you pick order of commit then save file)
+        git rebase -i HEAD~5 (this mean you can rearrange, the last 5 commits)
+            # option Commands:
+            # p, pick = use commit
+            # r, reword = use commit, but edit the commit message
+            # e, edit = use commit, but stop for amending
+            # s, squash = use commit, but meld into previous commit
+            # f, fixup = like "squash", but discard this commit's log message
+            # x, exec = run command (the rest of the line) using shell
+            # d, drop = remove commit
+    3- advance:
+        git rebase --onto branchName1 branchName2 branchName3 (we order sequence of branch rebase in one history)
+    4- confilict
+        * first resolve confilict and then tell git resolve: git add fileName
+            ## if you want update index : git rebase --continue
+            ## if you skip update : git rebase --skip
+            ## if you want undo rebase : git rebase --abort
