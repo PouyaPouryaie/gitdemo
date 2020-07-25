@@ -63,6 +63,7 @@ number video seen : 14
 
     2- if you are have repo in local
         * git remote add origin git@github.com:PouyaPouryaie/gitdemo.git
+        * if your repo is another server : $ git remote add origin ssh://[serverUser]@[serverIp]:/home/pouya/myrepo
         * git push -u origin master
 
     3- if you created branch in local and you want push that as new branch in remote repo
