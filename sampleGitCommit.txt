@@ -1,0 +1,21 @@
+Title : add-many-to-many relation
+
+Module : search-filter
+Issue :
+Type: feat(feature), fix, style, refactor, test, docs, chore(maintenance)
+Branch : master
+Version : 1.0.0
+Date: 1399-10-21
+Auther: pouya pouryaie
+
+Description: 
+
+Changes:
+- Deleted:
+- Added Package: book and author domain package
+- Changes:
+	- repackage book and create author package
+    - add CRUD for author
+    - add BaseService for resuable basic repository
+
+ToDo:
