@@ -1,5 +1,9 @@
 # git command
 
+# global
+    git config --global user.name "pouya pouryaie"
+    git config --global user.email "pouyapouryaie@gmail.com"
+
 # add
     git add fileName ('.' that symbol means all file)
 
