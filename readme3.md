@@ -26,6 +26,7 @@ number video seen : 14
     add : git branch -b namebranch
     merge : git merge namebranch
     remove after merge : git branch -d namebranch
+    create main(master) branch : git branch -M main
 
 # alias
 
