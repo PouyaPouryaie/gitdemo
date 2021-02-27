@@ -6,6 +6,9 @@
 
 # add
     git add fileName ('.' that symbol means all file)
+    
+# reset
+    reset index : git rm -r --cached .
 
 # commit
 
