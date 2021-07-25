@@ -109,6 +109,10 @@ number video seen : 14
 # show detail in commit
 
     git show commit id
+    
+# track remote branch on local branch
+
+    git branch --set-upstream-to=origin/<remote-branch> <local-branch>
 
 # branch in remote
 
