@@ -101,6 +101,8 @@ number video seen : 14
         git pull
     for pull specific branch from remote to local
         git pull origin 'branch-name' (recommend before pull in local create branch with same name in remote) 
+    
+    - if you have 'Git refusing to merge unrelated histories' error you must be add --allow-unrelated-histories to pull request
 
 # rename remote repo in local
 
