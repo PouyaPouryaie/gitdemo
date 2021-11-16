@@ -1,5 +1,5 @@
 # Git Learning
 
-this doc use for learn basic command in git & gitHub
+This document show how to use basic command from Git.
 
-**if you are want seen command open readme3.md, this file write have command and add note about that**
+**if you are want seen command open readme3.md, this file contain commands and add note about it**
