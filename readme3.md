@@ -116,6 +116,27 @@ number video seen : 14
 
     git branch --set-upstream-to=origin/<remote-branch> <local-branch>
 
+# Stash
+
+    The git stash command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy
+         - if you create new file and this file have not been staged in git, then when use stash command, this file is ignored by git
+
+    1- basic command: git stash
+    2- if you want reapply stage and remove from stash: git stash pop
+    3- if you want reapply stage and copy from stash: git stash apply
+    4- stash option: 
+        - git stash -u : for untrack files
+        - git stash -a : for all data, even ignore files
+        - git stash list : list of WIP (work in progress) in stash
+        - git stash pop/apply stash@{number} : select specific stash
+        - git stash save "message" : define description for 
+        - git stash show : show diff
+        - fir stash show -p : view full diff between files
+    5 - Creating a branch from your stash
+        - If the changes on your branch diverge from the changes in your stash, you may run into conflicts when popping or applying your stash. Instead, you can use git stash branch to create a new branch to apply your stashed changes to:
+            git stash branch add-stylesheet stash@{number}
+
+
 # branch in remote
 
     1- first create branch in remote repository
