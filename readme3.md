@@ -90,6 +90,8 @@ number video seen : 14
     
     7- if you want Edit tag in remote repo
         * git push --force origin tagName
+    8- if you want Remove tag from remote repo
+        * git push --delete origin tagname
 
 # clone
 
