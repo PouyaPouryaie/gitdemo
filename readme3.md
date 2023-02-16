@@ -177,3 +177,15 @@ number video seen : 14
             ## if you want update index : git rebase --continue
             ## if you skip update : git rebase --skip
             ## if you want undo rebase : git rebase --abort
+
+# change origin and push all-things in new origin
+
+    1. Setup new origin url for local repo
+    ```
+    git remote set-url origin <yourUrl>
+    ```
+    2. push all your branch and tags into new repo with one of below command:
+    - git push origin '*:*'
+    - git push origin --all
+    
+    
