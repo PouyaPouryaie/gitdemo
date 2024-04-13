@@ -52,6 +52,11 @@ number video seen : 14
     soft mode : git reset --soft id
     hard mode : git reset --hard id
 
+# revert
+
+    we should only use git revert if we want to apply the inverse of a particular commit. It doesn’t revert to the previous state of a project by removing all subsequent commits, it simply undoes a single commit. git revert doesn’t move ref pointers to the commit that we’re reverting, which is in contrast to other ‘undo’ commands, such as git checkout and git reset. Instead, these commands move the HEAD ref pointer to the specified commit.
+    git revert id
+
 # github
 
     prepare
