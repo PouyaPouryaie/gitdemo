@@ -114,6 +114,9 @@ number video seen : 14
     
     - if you have 'Git refusing to merge unrelated histories' error you must be add --allow-unrelated-histories to pull request
 
+    pull and rebase on your branch
+        git pull --rebase
+
 # rename remote repo in local
 
     git remote set-url origin newAddress(newName)
