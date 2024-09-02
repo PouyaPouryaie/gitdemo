@@ -121,9 +121,13 @@ number video seen : 14
 
     git remote set-url origin newAddress(newName)
 
-# show detail in commit
+# show details
 
-    git show commit id
+    - for a specific commit
+    git show commit_id
+
+    - for a specific file
+    git show file_name
     
 # track remote branch on local branch
 
