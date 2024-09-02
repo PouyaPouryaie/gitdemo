@@ -182,25 +182,25 @@ number video seen : 14
 # rebase
 
     1- normal:
-        git rebase branchName (all of commit in 'branchName' rebase onto current branch)
+        git rebase <branchName> (all of commits in 'branchName' rebase onto the current branch)
     2- Interactive:
-        git rebase -i branchName (then in file you pick order of commit then save file)
+        git rebase -i <branchName> (then in the file you pick the order of commit then save the file)
         git rebase -i HEAD~5 (this mean you can rearrange, the last 5 commits)
             # option Commands:
             # p, pick = use commit
             # r, reword = use commit, but edit the commit message
             # e, edit = use commit, but stop for amending
-            # s, squash = use commit, but meld into previous commit
+            # s, squash = use commit, but meld into the previous commit
             # f, fixup = like "squash", but discard this commit's log message
             # x, exec = run command (the rest of the line) using shell
             # d, drop = remove commit
     3- advance:
         git rebase --onto branchName1 branchName2 branchName3 (we order sequence of branch rebase in one history)
-    4- confilict
-        * first resolve confilict and then tell git resolve: git add fileName
-            ## if you want update index : git rebase --continue
-            ## if you skip update : git rebase --skip
-            ## if you want undo rebase : git rebase --abort
+    4- conflict
+        * first resolve conflict and then tell git resolve: git add fileName
+            ## if you want update index: git rebase --continue
+            ## if you skip update: git rebase --skip
+            ## if you want undo rebase: git rebase --abort
 
 # change origin and push all-things in new origin
 
@@ -212,4 +212,11 @@ number video seen : 14
     - git push origin '*:*'
     - git push origin --all
     
-    
+# Bisect
+    The Git Bisect command performs a binary search to detect the commit that introduced a bug or regression in the project’s history
+    1. start the bisect -> git bisect start
+    2. define bad commit -> git bisect bad (current branch)
+    3. define good commit -> git bisect good <commit_hash>
+    4. then bisect starts to move between commits in the range of bad and good commits to find the commit which is a bug introduced there.
+    5. after finding the bug, stop the bisect -> git bisect reset
+    6. then you can check that commit and revert or fix it with new commit.
