@@ -175,7 +175,7 @@ number video seen : 14
 # rebase
 
     1- normal:
-        git rebase branchName (all of commit in 'ranchName' rebase onto current branch)
+        git rebase branchName (all of commit in 'branchName' rebase onto current branch)
     2- Interactive:
         git rebase -i branchName (then in file you pick order of commit then save file)
         git rebase -i HEAD~5 (this mean you can rearrange, the last 5 commits)
