@@ -124,13 +124,13 @@ number video seen : 14
 # Diff & Show
 
     - showing for a specific commit
-    git show commit_id
+    git show <commit_hash>
 
     - showing for a specific file
     git show file_name
 
     -- list of all changes
-    git diff-tree -r <branch_name>
+    git diff-tree -r <commit_hash>
 
     -- compare two branch -> In short, it will show you all the commits that “branch_2” has that are not in “branch_1”
     git diff <branch_1>..<branch_2>
