@@ -219,4 +219,5 @@ number video seen : 14
     3. define good commit -> git bisect good <commit_hash>
     4. then bisect starts to move between commits in the range of bad and good commits to find the commit which is a bug introduced there.
     5. after finding the bug, stop the bisect -> git bisect reset
-    6. then you can check that commit and revert or fix it with new commit.
+    6. then you can check that commit and revert or fix it with a new commit.
+    7. [Tutorial for Bisect] (https://www.youtube.com/watch?v=D7JJnLFOn4A&t=367s)
