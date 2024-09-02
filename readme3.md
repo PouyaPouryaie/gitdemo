@@ -166,11 +166,11 @@ number video seen : 14
 # remove
 
     branch:
-        from local : git branch -d branchName
-        from remote : git push origin :branchName
+        from local: git branch -d <branchName>
+        from remote: git push origin -d <branchName>
     tag:
-        from remote : git push origin :tagName
-        from local : git tag -d tagname
+        from local: git tag -d <tagname>
+        from remote: git push --delete origin <tagName>
 
 # rebase
 
