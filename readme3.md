@@ -121,13 +121,20 @@ number video seen : 14
 
     git remote set-url origin newAddress(newName)
 
-# show details
+# Diff & Show
 
-    - for a specific commit
+    - showing for a specific commit
     git show commit_id
 
-    - for a specific file
+    - showing for a specific file
     git show file_name
+
+    -- list of all changes
+    git diff-tree -r <branch_name>
+
+    -- compare two branch -> In short, it will show you all the commits that “branch_2” has that are not in “branch_1”
+    git diff <branch_1>..<branch_2>
+    
     
 # track remote branch on local branch
 
