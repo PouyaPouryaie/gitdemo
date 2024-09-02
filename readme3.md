@@ -1,20 +1,21 @@
-# git command
+# Git command
 
-# global
+# Global
     git config --global user.name "pouya pouryaie"
     git config --global user.email "pouyapouryaie@gmail.com"
 
-# add
+# Add
     git add fileName ('.' that symbol means all file)
     
-# reset
+# Reset
     reset index : git rm -r --cached .
 
-# commit
+# Commit
 
-    1- simple : git commit -m "message"
-    2- add And Commit : git commit -am "message" (recommend for when you just modify file not added)
-    3- commit With IssueDone : git commit -m "message %close #issueNumber" (after that push to remote repo)
+    1- simple: git commit -m "message"
+    2- add And Commit: git commit -am "message" (recommend for when you just modify file not added)
+    3- commit With IssueDone: git commit -m "message %close #issueNumber" (after that push to remote repo)
+    4- amend: adding latest changes to the previous commit: git commit --amend -m "an updated commit message"
 
 # back file to latest station
 
