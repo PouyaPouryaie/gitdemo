@@ -196,6 +196,7 @@ flexibleTag : `git tag -a <tag-name> -m "message" <commit-id>`
 - best-practice : `git tag -a <tag-name> -m "tag message"`
 - show comment : `git tag -n`
 - editTag : `git tag -f <tag-name> <commit-id>`
+- push all new tags: `git push --tags`
 
 ## Bisect
     The Git Bisect command performs a binary search to detect the commit that introduced a bug or regression in the project’s history
