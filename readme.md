@@ -39,6 +39,7 @@ git status
 Viewing the commit history
 - showing comprehensive log: `git log <options> <revision-range>`
 - Showing compact log: `git log --oneline`
+- Showing logs in graph mode: `git log --graph`
 
 ## Diff & Show
 Comparing changes between commits
