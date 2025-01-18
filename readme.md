@@ -213,6 +213,9 @@ flexibleTag : `git tag -a <tag-name> -m "message" <commit-id>`
 ```bash
 git config --global user.name "pouya pouryaie"
 git config --global user.email "pouyapouryaie@gmail.com"
+
+# change default branch name while creating new git repository
+git config --global init.defaultBranch main
 ```
     
 # Reset Index
