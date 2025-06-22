@@ -126,6 +126,13 @@ git cherry-pick is a powerful command that enables arbitrary Git commits to be p
 - UseCases
     - when a bug is dicovered through developing a new feature and you want to directly commit it to the `main`
     - during team collaboration
+```bash
+git cherry-pick <commit-hash>
+# Steps
+1. Find hash-key from `git log`
+2. Checkout to the main branch
+3. Use cherry-pick command to pick and commit it to main branch
+```
 
 
 # Remote Repositories
