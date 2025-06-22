@@ -83,6 +83,9 @@ Merging branches
 ```bash
 git merge <branch-name>
 ```
+- `--no-ff`: It provides a clear and explicit record in your Git history of when a feature branch (or any branch) was integrated into long-lived branches like `main`. (`git merge --no-ff <branch-name>`)
+    - Clearer Feature Boundaries
+    - Easier Reverts
 
 ## Rebase
 Reordering commits on a branch
@@ -120,6 +123,34 @@ git rebase --skip
 # if you want undo rebase: 
 git rebase --abort
 ```
+
+## Cherry pick
+git cherry-pick is a powerful command that enables arbitrary Git commits to be picked by reference and appended to the current working HEAD.<br> Cherry picking is the act of picking a commit from a branch and applying it to another.
+- UseCases
+    - when a bug is dicovered through developing a new feature and you want to directly commit it to the `main`
+    - during team collaboration
+    - for merge confilict resolution
+        - steps:
+            - `git merge --abort`
+            - `git log dev` (to find the commit hash)
+            - `git cherry-pick <commit-hash>`
+            - if you got error:
+                - fix the confilict
+                - `git add .` or `git add <file>`
+                - `git commit -m "commit message"`
+
+```bash
+git cherry-pick <commit-hash>
+# Steps
+1. Find hash-key from `git log`
+2. Checkout to the main branch
+3. Use cherry-pick command to pick and commit it to main branch
+```
+- Options
+    - `--edit`: will cause git to prompt for a commit message before applying the cherry-pick operation
+    - `--no-commit`: will execute the cherry pick but instead of making a new commit it will move the contents of the target commit into the working directory of the current branch.
+    - `--signoff`: will add a 'signoff' signature line to the end of the cherry-pick commit message
+
 
 # Remote Repositories
 
