@@ -121,6 +121,13 @@ git rebase --skip
 git rebase --abort
 ```
 
+## Cherry pick
+git cherry-pick is a powerful command that enables arbitrary Git commits to be picked by reference and appended to the current working HEAD.<br> Cherry picking is the act of picking a commit from a branch and applying it to another.
+- UseCases
+    - when a bug is dicovered through developing a new feature and you want to directly commit it to the `main`
+    - during team collaboration
+
+
 # Remote Repositories
 
 ## Remote
