@@ -83,6 +83,9 @@ Merging branches
 ```bash
 git merge <branch-name>
 ```
+- `--no-ff`: It provides a clear and explicit record in your Git history of when a feature branch (or any branch) was integrated into long-lived branches like `main`. (`git merge --no-ff <branch-name>`)
+    - Clearer Feature Boundaries
+    - Easier Reverts
 
 ## Rebase
 Reordering commits on a branch
