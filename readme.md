@@ -126,6 +126,16 @@ git cherry-pick is a powerful command that enables arbitrary Git commits to be p
 - UseCases
     - when a bug is dicovered through developing a new feature and you want to directly commit it to the `main`
     - during team collaboration
+    - for merge confilict resolution
+        - steps:
+            - `git merge --abort`
+            - `git log dev` (to find the commit hash)
+            - `git cherry-pick <commit-hash>`
+            - if you got error:
+                - fix the confilict
+                - `git add .` or `git add <file>`
+                - `git commit -m "commit message"`
+
 ```bash
 git cherry-pick <commit-hash>
 # Steps
@@ -133,6 +143,10 @@ git cherry-pick <commit-hash>
 2. Checkout to the main branch
 3. Use cherry-pick command to pick and commit it to main branch
 ```
+- Options
+    - `--edit`: will cause git to prompt for a commit message before applying the cherry-pick operation
+    - `--no-commit`: will execute the cherry pick but instead of making a new commit it will move the contents of the target commit into the working directory of the current branch.
+    - `--signoff`: will add a 'signoff' signature line to the end of the cherry-pick commit message
 
 
 # Remote Repositories
