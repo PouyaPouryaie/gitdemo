@@ -52,6 +52,11 @@ git show <commit_hash>
 ```bash
 git show file_name
 ```
+- showing a high-level summary of changes (files modified and line counts) for a commit
+```bash
+git show <commit_hash> --stat
+```
+
 - list of all changes
 ```bash
 git diff-tree -r <commit_hash>
