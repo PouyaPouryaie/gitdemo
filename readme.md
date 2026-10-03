@@ -66,6 +66,28 @@ git diff-tree -r <commit_hash>
 git diff <branch_1>..<branch_2>
 ```
 
+## Sparse Checkout
+Downloading only selected parts of a repository
+
+Use sparse checkout when you need to work with only a few folders in a large repository. Combined with `--filter=blob:none`, the initial clone downloads repository metadata without file contents; checking out a branch then fetches the contents of the selected folders.
+
+```bash
+# 1. Clone the repository without downloading file contents (metadata only)
+git clone --filter=blob:none --no-checkout <REPO_URL> <LOCAL_FOLDER_NAME>
+
+# 2. Navigate into the cloned folder
+cd <LOCAL_FOLDER_NAME>
+
+# 3. Enable sparse checkout in cone mode (directory-based matching)
+git sparse-checkout init --cone
+
+# 4. Select only the folder(s) you want to check out
+git sparse-checkout set <PATH/TO/YOUR/FOLDER>
+
+# 5. Check out the branch you need (for example, main or dev)
+git checkout <BRANCH_NAME>
+```
+
 # Branching and Merging
 
 ## Branch
